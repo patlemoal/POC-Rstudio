@@ -90,7 +90,7 @@ Shiny contient deux paramètres fondamentaux, l'interface utilisateur et le serv
 
 **L'interface utilisateur (UI)** contient tout le code texte qui décrit la mise en page de la page, tout texte supplémentaire, images et autres éléments HTML que nous souhaitons inclure afin que l'utilisateur puisse interagir et comprendre comment utiliser la page Web. 
 
-**Le serveur ** est le back-end de l'application Shiny. Ce paramètre crée un serveur Web spécialement conçu pour héberger des applications Shiny dans un environnement contrôlé.
+**Le serveur** est le back-end de l'application Shiny. Ce paramètre crée un serveur Web spécialement conçu pour héberger des applications Shiny dans un environnement contrôlé.
 
 
 
