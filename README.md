@@ -62,7 +62,11 @@ L'ensemble de l'analyse est accessible via le lien suivant : [test (1).Rmd](![im
 
 ![image](/analyse/correlation.PNG){:height="36px" width="36px"}
 
-
+<p align="center">
+  <img src="/analyse/analyse.PNG" width="256" height="455">
+  <img src="/analyse/donnesmanquantes.PNG" width="256" height="455">
+  <img src="/analyse/correlation.PNG" width="256" height="455">
+</p>
 
 
 Nos données sont toutes numériques et nous n'avons pas de données manquantes.
