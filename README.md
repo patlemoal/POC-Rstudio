@@ -32,6 +32,8 @@ Language et  outils utilisés:
 
 # VISUALISATION DES DONNEES :
 
+Notre jeu de données est constitué de  17 variables et 10 000 lignes. 
+
 ![image](analyse/donnees.PNG)
 
 ![image](analyse/variable.PNG)
