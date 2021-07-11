@@ -1,0 +1,244 @@
+---
+title: "POC R"
+output: html_notebook
+---
+CONTEXTE DU PROJET :
+
+Le jeu de données proposé est celui deS venteS de immeubles sue Paris. Il est parfait pour faire un POC technologique, c'est à dire, utiliser R pour un modèle prédictif. 
+Le but est donc de créer un modèle et de visualiser les résultats avec R pour vous faire une idée de ce que permet ce langage. Ainsi, vous pourrez voir la différence avec Python.
+
+Vous pouvez, par exemple, préparer un modèle pour estimer les prix de l'immobilier sur Paris.
+
+
+
+ETUDE :
+
+Nous allons
+-   visualiser les données
+-   analyser les données 
+-   chercher si existe unerelation entre elles
+-   construire notre modèle
+
+
+
+
+
+VISUALISATION DES DONNEES :
+
+```{r}
+url <- "https://simplonline-v3-prod.s3.eu-west-3.amazonaws.com/media/file/csv/a5707984-9111-4d36-9da9-4ab5d35162cd.csv"
+data <- read.csv(url,header = TRUE)
+```
+
+
+
+```{r}
+head(data)
+```
+
+Notre jeu de données se compose de 17 colonnes :
+- squareMeters
+- numberOfRooms
+- hasYard
+- hasPool
+- floors
+- cityCode 
+- cityPartRange
+- numPrevOwners
+- made - year
+- isNewBuilt
+- hasStormProtector
+- basement
+- attic 
+- garage 
+- hasStorageRoom
+- hasGuestRoom 
+- price
+
+
+ANALYSE DES DONNEES:
+
+
+La fonction str liste les différentes variables, indique leur type et donne le cas échéant des informations supplémentaires ainsi qu’un échantillon des premières valeurs prises par cette variable :
+
+```{r}
+str(data)
+```
+Nous dataset est constitué de 10 000 lignes et 17 variables.
+Toutes nos variables sont des int,hormis la variable price qui est numérique.
+
+L’extension dplyr propose une fonction glimpse (ce qui signifie aperçu en anglais) qui permet de visualiser rapidement et de manière condensée le contenu d’un tableau de données.
+```{r}
+library(dplyr)
+glimpse(data)
+```
+
+L’extension labelled propose une fonction look_for, qui permet de lister les différentes variables d’un fichier de données, ainsi que leurs principales caractéristiques :
+
+```{r}
+library(labelled)
+look_for(data)
+```
+
+Lorsque l’on a un gros tableau de données avec de nombreuses variables, il peut être difficile de retrouver la ou les variables d’intérêt. Il est possible d’indiquer à look_for un mot-clé pour limiter la recherche. Par exemple :
+```{r}
+look_for(data, "haspool")
+```
+
+```{r}
+describe(data)
+```
+
+```{r}
+library(skimr)
+```
+L’extension skimr a pour objectif de fournir une fonction skim comme alternative à summary{base} pour les vecteurs et les tableaux de données afin de fournir plus de statistiques dans un format plus compact. Elle peut être appliquée à un vecteur donné ou directement à un tableau de données.
+
+```{r}
+skim(data)
+```
+On constate que nous n'avons pas de données manquantes. Et nous avons des informations complémentaires notamment la surface moyenne est de 49 870 unite pour un prix moyen de 4993448.unite
+Il est possible de spécifié un contenu , ici exemple avec ice
+
+```{r}
+skim(data, contains("ice"))
+```
+
+
+
+```{r}
+summary(data)
+```
+```{r}
+plot_num(data)
+```
+```{r}
+freq(data, c("price", "squareMeters"))
+```
+
+
+
+CORRELATION :
+
+Une matrice de corrélation est utilisée pour évaluer la dépendence entre plusieurs variables en même temps. Le résultat est une table contenant les coefficients de corrélation entre chaque variable et les autres. 
+
+```{r}
+library(corrplot)
+round(cor(data), 2)
+
+```
+
+
+```{r}
+mcor<-cor(data,method=c("pearson"))
+corrplot(mcor, type="upper", order="hclust", tl.col="black", tl.srt=45)
+```
+
+
+
+
+ 
+```{r}
+cor(data$price, data$squareMeters, method = "pearson")
+```
+
+Uniquement, deux variables sont corrélées (et fortement 0.99) : 
+  SquareMeters et Price. 
+Il s'agit d'un problème de régression linéaire.
+
+
+```{r}
+library(ggplot2)
+ggplot(data, aes(x = squareMeters, y = price), fill = "dodger blue") +
+  geom_point() +
+  stat_smooth()
+
+
+```
+
+
+```{r}
+p_1 <- ggplot() + geom_point(data = data, aes(x = squareMeters, y = price)) +
+xlab("Index")
+p_2 <- ggplot() + geom_point(data = data, aes(x = isNewBuilt, y = price)) +
+xlab("Index")
+
+```
+
+library(gridExtra)
+grid.arrange(p_1 ncol=1)
+```{r}
+library(gridExtra)
+grid.arrange(p_1, p_2, ncol=2)
+```
+
+
+Nous voyons bien que la correlation est liée  la surface et au prix.
+
+
+creer un rapport
+
+L’extension DataExplorer fournit des outils d’exploration graphique d’un fichier de données. En premier lieu, sa fonction create_report génère un rapport automatique à partir d’un tableau de données.
+
+```{r}
+library(DataExplorer)
+create_report(data)
+```
+
+L’extension dataMaid propose une fonction makeCodebook permettant de générer une présentation de l’ensemble des variables d’un tableau de données, au format PDF, Word ou HTML.
+
+```{r}
+library(dataMaid)
+makeCodebook(data)
+```
+
+
+
+Nous allons maintenant créer notre modèle simple :
+
+La fonction lm()
+Modèle linéaire avec R : lm() ;
+
+
+
+```{r}
+
+modellm<-lm(price ~ squareMeters, data=data)
+modellm
+```
+
+
+Appliquer la fonction summary() à cet objet donne de nombreuses informations
+
+
+```{r}
+summary(modellm)
+```
+Il est important de savoir comment accéder aux éléments issus de la régression, dont les
+principaux sont :
+
+coefficients : un vecteur de coeffcients (nommé),
+resiuals : les résidus,
+fitted.values : les valeurs estimées,
+df.residual : nombre de degrés de liberté.
+
+
+```{r}
+names(modellm)
+```
+Il suffit alors d'extraire l'élément souhaité, en l'appelant par son nom :
+
+```{r}
+modellm$coefficients
+```
+
+```{r}
+ggplot() + geom_point(data = data.frame(residuals = modellm$residuals),
+aes(x = seq_along(residuals), y = residuals), alpha = .5) +
+xlab("") + ylab("Résidus")
+```
+
+
+```{r}
+save(modellm,file="model.rda")
+```
