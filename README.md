@@ -63,7 +63,7 @@ L'ensemble de l'analyse est accessible via le lien suivant : [test (1).Rmd](![im
 ![image](/analyse/correlation.PNG){:height="36px" width="36px"}
 
 <p align="center">
-  <img src="/analyse/analyse.PNG" width="562" height="361">
+  <img src="/analyse/analyse.PNG" width="400" height="361">
   <img src="/analyse/donnesmanquantes.PNG" width="325" height="500">
   <img src="/analyse/grapcorel.PNG" width="325" height="500">
 </p>
