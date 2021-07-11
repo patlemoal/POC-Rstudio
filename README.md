@@ -34,8 +34,7 @@ Language et  outils utilisés:
 
 ![image](analyse/donnees.PNG)
 
-donnees.PNG
-../master/
+![image](analyse/variable.PNG)
 
 
 
