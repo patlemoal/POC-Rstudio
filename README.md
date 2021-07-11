@@ -47,7 +47,7 @@ Langage et  outils utilisés:
 
 Ci dessous les 17 variables qui le compose :
 
-![image](analyse/variable.PNG)
+![image](analyse/variable.PNG, width="275" height="361")
 
 
 
@@ -59,8 +59,8 @@ L'ensemble de l'analyse est accessible via le lien suivant : [test (1).Rmd](![im
 
 <p align="center">
   <img src="/analyse/analyse.PNG" width="400" height="361">
-  <img src="/analyse/donnesmanquantes.PNG" width="300" height="361">
-  <img src="/analyse/grapcorel.PNG" width="300" height="361">
+  <img src="/analyse/donnesmanquantes.PNG" width="275" height="361">
+  <img src="/analyse/grapcorel.PNG" width="275" height="361">
 </p>
 
 
