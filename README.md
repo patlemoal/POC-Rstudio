@@ -54,13 +54,8 @@ Ci dessous les 17 variables qui le compose :
 
 # Analyse des données :
 
-L'ensemble de l'analyse est accessible via le lien suivant : [test (1).Rmd](![image]analyse/test (1).Rmd)
+L'ensemble de l'analyse est accessible via le lien suivant : [test (1).Rmd](![image](analyse/test (1).Rmd))
 
-![image](/analyse/analyse.PNG, :height="36px" width="36px")
-
-![image](/analyse/donnesmanquantes.PNG){:height="36px" width="36px"}
-
-![image](/analyse/correlation.PNG){:height="36px" width="36px"}
 
 <p align="center">
   <img src="/analyse/analyse.PNG" width="400" height="361">
@@ -72,7 +67,7 @@ L'ensemble de l'analyse est accessible via le lien suivant : [test (1).Rmd](![im
 Nos données sont toutes numériques et nous n'avons pas de données manquantes.
 
 
-![image](analyse/grapcorel.PNG)
+![image](analyse/correlation.PNG)
 
 
 Uniquement, deux variables sont corrélées (et fortement à 99%) : 
