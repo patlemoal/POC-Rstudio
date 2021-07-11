@@ -47,7 +47,7 @@ Langage et  outils utilisés:
 
 Ci dessous les 17 variables qui le compose :
 
-![image](analyse/variable.PNG width="275" height="361")
+![image](analyse/variable.PNG, width="275", height="361")
 
 
 
