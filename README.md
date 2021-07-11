@@ -19,7 +19,7 @@ Pour cette étude , nous allons
 -   construire notre modèle
 -   visualiser le résultat attendu
 
-Language et  outils utilisés:
+Langage et  outils utilisés:
 
   - **R** : langage orienté vers le traitement de données et l’analyse statistique dérivé du langage S
   - **Rstudio** : environnement de développement intégré qui permet de travailler en R, développer de nouvelles bibliothèques et travailler avec des notebooks.
@@ -31,7 +31,7 @@ Language et  outils utilisés:
 
 # VISUALISATION DES DONNEES :
 
-Notre jeu de données est constitué de  17 variables et 10 000 lignes. Il est accessible [ici](https://github.com/patlemoal/POC-Rstudio/blob/85bb579e5cfce50edbea83fba3d632287ca51d1c/data/prices.csv) . Ci dessous, la visualisation du jeu de données et des 17 variables qui le compose.
+[Notre jeu de données]((https://github.com/patlemoal/POC-Rstudio/blob/85bb579e5cfce50edbea83fba3d632287ca51d1c/data/prices.csv) est constitué de  17 variables et 10 000 lignes. Ci dessous, nous trouvons un aperçu de celui-ci  et des 17 variables qui le compose.
 
 ![image](analyse/donnees.PNG)
 
