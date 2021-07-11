@@ -26,6 +26,13 @@ Langage et  outils utilisés:
   - **R** : langage orienté vers le traitement de données et l’analyse statistique dérivé du langage S
   - **Rstudio** : environnement de développement intégré qui permet de travailler en R, développer de nouvelles bibliothèques et travailler avec des notebooks.
   - **Shiny** : package R qui facilite la création d'applications Web interactives directement à partir de R. Nous pouvons héberger des applications autonomes sur une page Web ou les intégrer dans des documents R Markdown ou créer des tableaux de bord . Une caractéristique essentielle de Shiny est que ces applications sont en quelque sorte « live » puisque la sortie de la page Web change au fur et à mesure que l'utilisateur modifie les entrées, sans recharger le navigateur
+  Shiny contient deux paramètres fondamentaux, l'interface utilisateur et le serveur. 
+
+**L'interface utilisateur (UI)** contient tout le code texte qui décrit la mise en page de la page, tout texte supplémentaire, images et autres éléments HTML que nous souhaitons inclure afin que l'utilisateur puisse interagir et comprendre comment utiliser la page Web. 
+
+**Le serveur** est le back-end de l'application Shiny. Ce paramètre crée un serveur Web spécialement conçu pour héberger des applications Shiny dans un environnement contrôlé.
+
+
 
 
 
@@ -85,12 +92,6 @@ Nos 2 variables :  target (price) et  SquareMeters (surface) étant corrélées,
 # Visualisation du résultat:
 
 Nous visualisons nos données via shinny.
-
-Shiny contient deux paramètres fondamentaux, l'interface utilisateur et le serveur. 
-
-**L'interface utilisateur (UI)** contient tout le code texte qui décrit la mise en page de la page, tout texte supplémentaire, images et autres éléments HTML que nous souhaitons inclure afin que l'utilisateur puisse interagir et comprendre comment utiliser la page Web. 
-
-**Le serveur** est le back-end de l'application Shiny. Ce paramètre crée un serveur Web spécialement conçu pour héberger des applications Shiny dans un environnement contrôlé.
 
 
 
