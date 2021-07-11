@@ -1,7 +1,7 @@
 # POC-Rstudio
 
 
-# CONTEXTE DU PROJET : 
+# Contexte du projet: 
 
 
 ```
@@ -13,7 +13,7 @@ Vous pouvez, par exemple, préparer un modèle pour estimer les prix de l'immobi
 
 
 
-# DEROULEMENT DE L'ETUDE :
+# Déroulé de l'étude :
 
 Pour cette étude , nous allons
 -   visualiser les données
@@ -31,11 +31,9 @@ Langage et  outils utilisés:
 
 
 
-# VISUALISATION DES DONNEES :
+# Visualisation des données :
 
-[Notre jeu de données](https://github.com/patlemoal/POC-Rstudio/blob/85bb579e5cfce50edbea83fba3d632287ca51d1c/data/prices.csv) est constitué de  17 variables et 10 000 lignes.
-
-Ci dessous, nous trouvons un aperçu de celui-ci  et des 17 variables  qui le compose.
+[Notre jeu de données](https://github.com/patlemoal/POC-Rstudio/blob/85bb579e5cfce50edbea83fba3d632287ca51d1c/data/prices.csv) est constitué de  17 variables et 10 000 lignes. Ci dessous, nous trouvons un aperçu de celui-ci  et des 17 variables qui le compose.
 
 ![image](analyse/donnees.PNG)
 
@@ -44,25 +42,24 @@ Ci dessous, nous trouvons un aperçu de celui-ci  et des 17 variables  qui le co
 
 
 
-# ANALYSE DES DONNEES :
-
-Nous effectuons l'analyse de nos données via le notebook intégré dans RStudio.
+# Analyse des données :
 
 
-
-
-# CONSTRUCTION DU MODELE: 
+# Construction du modèle: 
 
 
 
-# VISUALISATION DU RESULTAT:
+# Visualisation du résultat:
 
-![image](analyse/variable.PNG)
-![image](analyse/variable.PNG)
-
+![image](resultat/tableau.PNG)
 
 
-# COMPARAISON R VS PYTHON:
+![image](resultat/prediction.PNG)
+
+
+
+
+# Comparaison R vs python:
 
 
 
