@@ -4,10 +4,10 @@
 # CONTEXTE DU PROJET : 
 
 
-''' Le jeu de données proposé est celui des ventes de immeubles sur Paris. Il est parfait pour faire un POC technologique, c'est à dire, utiliser R pour un modèle prédictif. 
+```|Le jeu de données proposé est celui des ventes de immeubles sur Paris. Il est parfait pour faire un POC technologique, c'est à dire, utiliser R pour un modèle prédictif. 
 Le but est donc de créer un modèle et de visualiser les résultats avec R pour vous faire une idée de ce que permet ce langage. Ainsi, vous pourrez voir la différence avec Python.
 
-Vous pouvez, par exemple, préparer un modèle pour estimer les prix de l'immobilier sur Paris.'''
+Vous pouvez, par exemple, préparer un modèle pour estimer les prix de l'immobilier sur Paris.```
 
 
 
@@ -31,7 +31,7 @@ Langage et  outils utilisés:
 
 # VISUALISATION DES DONNEES :
 
-[Notre jeu de données]((https://github.com/patlemoal/POC-Rstudio/blob/85bb579e5cfce50edbea83fba3d632287ca51d1c/data/prices.csv) est constitué de  17 variables et 10 000 lignes. Ci dessous, nous trouvons un aperçu de celui-ci  et des 17 variables qui le compose.
+[Notre jeu de données](https://github.com/patlemoal/POC-Rstudio/blob/85bb579e5cfce50edbea83fba3d632287ca51d1c/data/prices.csv) est constitué de  17 variables et 10 000 lignes. Ci dessous, nous trouvons un aperçu de celui-ci  et des 17 variables qui le compose.
 
 ![image](analyse/donnees.PNG)
 
