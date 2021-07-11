@@ -32,7 +32,7 @@ Language et  outils utilisés:
 
 # VISUALISATION DES DONNEES :
 
-![image](analyse/donnnees.PNG)
+![image](analyse/donnees.PNG)
 
 donnees.PNG
 ../master/
