@@ -31,7 +31,7 @@ Language et  outils utilisés:
 
 # VISUALISATION DES DONNEES :
 
-Notre jeu de données est constitué de  17 variables et 10 000 lignes. Il est accessible ici https://github.com/patlemoal/POC-Rstudio/blob/85bb579e5cfce50edbea83fba3d632287ca51d1c/data/prices.csv . Ci dessous, la visualisation du jeu de données et des 17 variables qui le compose.
+Notre jeu de données est constitué de  17 variables et 10 000 lignes. Il est accessible [ici](https://github.com/patlemoal/POC-Rstudio/blob/85bb579e5cfce50edbea83fba3d632287ca51d1c/data/prices.csv) . Ci dessous, la visualisation du jeu de données et des 17 variables qui le compose.
 
 ![image](analyse/donnees.PNG)
 
