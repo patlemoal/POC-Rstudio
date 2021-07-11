@@ -56,11 +56,12 @@ Ci dessous les 17 variables qui le compose :
 
 L'ensemble de l'analyse est accessible via le lien suivant : [test (1).Rmd](![image]analyse/test (1).Rmd)
 
-![image](analyse/analyse.PNG){:height="36px" width="36px"}
+![image](/analyse/analyse.PNG){:height="36px" width="36px"}
 
-![image](analyse/donnesmanquantes.PNG){:height="36px" width="36px"}
+![image](/analyse/donnesmanquantes.PNG){:height="36px" width="36px"}
 
-![image](analyse/correlation.PNG){:height="36px" width="36px"}
+![image](/analyse/correlation.PNG){:height="36px" width="36px"}
+
 
 
 
