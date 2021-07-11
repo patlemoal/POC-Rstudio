@@ -15,8 +15,7 @@ Vous pouvez, par exemple, préparer un modèle pour estimer les prix de l'immobi
 
 Pour cette étude , nous allons
 -   visualiser les données
--   analyser les données 
--   chercher si existe une relation entre elles
+-   analyser les données  et chercher s'il existe une relation entre elles afin de définir le choix du modèle que nous utiliserons
 -   construire notre modèle
 -   visualiser le résultat attendu
 
