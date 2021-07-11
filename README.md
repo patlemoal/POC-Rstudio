@@ -64,8 +64,8 @@ L'ensemble de l'analyse est accessible via le lien suivant : [test (1).Rmd](![im
 
 <p align="center">
   <img src="/analyse/analyse.PNG" width="400" height="361">
-  <img src="/analyse/donnesmanquantes.PNG" width="325" height="361">
-  <img src="/analyse/grapcorel.PNG" width="325" height="361">
+  <img src="/analyse/donnesmanquantes.PNG" width="300" height="361">
+  <img src="/analyse/grapcorel.PNG" width="300" height="361">
 </p>
 
 
