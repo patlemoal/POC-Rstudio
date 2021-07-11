@@ -54,9 +54,17 @@ L'ensemble de l'analyse est accessible via le lien suivant : [test (1).Rmd](![im
 
 ![image](analyse/correlation.PNG)
 
-Nos données sont toutes numériques et nous n'avons pas de données manquantes.
-Nous voyons bien que la correlation est liée  la surface et au prix.
 
+
+Nos données sont toutes numériques et nous n'avons pas de données manquantes.
+
+
+![image](analyse/grapcorel.PNG)
+
+
+Uniquement, deux variables sont corrélées (et fortement à 99%) : 
+  SquareMeters et Price. 
+Il s'agit d'un problème de régression linéaire.
 
 A noter : 
 L’extension DataExplorer fournit des outils d’exploration graphique d’un fichier de données. En premier lieu, sa fonction create_report génère un rapport automatique à partir d’un tableau de données.
