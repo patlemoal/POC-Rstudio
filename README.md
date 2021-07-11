@@ -33,9 +33,11 @@ Langage et  outils utilisés:
 
 # Visualisation des données :
 
-[Notre jeu de données](https://github.com/patlemoal/POC-Rstudio/blob/85bb579e5cfce50edbea83fba3d632287ca51d1c/data/prices.csv) est constitué de  17 variables et 10 000 lignes. Ci dessous, nous trouvons un aperçu de celui-ci  et des 17 variables qui le compose.
+[Notre jeu de données](https://github.com/patlemoal/POC-Rstudio/blob/85bb579e5cfce50edbea83fba3d632287ca51d1c/data/prices.csv) est constitué de  17 variables et 10 000 lignes. 
 
 ![image](analyse/donnees.PNG)
+
+Ci dessous les 17 variables qui le compose :
 
 ![image](analyse/variable.PNG)
 
@@ -44,15 +46,19 @@ Langage et  outils utilisés:
 
 # Analyse des données :
 
-[test (1).Rmd](![image]analyse/test (1).Rmd)
+L'ensemble de l'analyse est accessible via le lien suivant : [test (1).Rmd](![image]analyse/test (1).Rmd)
 
+![image](analyse/analyse.PNG)
 
 ![image](analyse/donnesmanquantes.PNG)
 
 ![image](analyse/correlation.PNG)
 
-![image](analyse/analyse.PNG)
+Nous voyons bien que la correlation est liée  la surface et au prix.
 
+
+A noter : 
+L’extension DataExplorer fournit des outils d’exploration graphique d’un fichier de données. En premier lieu, sa fonction create_report génère un rapport automatique à partir d’un tableau de données.
 
 L'ensemble de l'étude est visible https://github.com/patlemoal/POC-Rstudio/blob/ad31b66be373945e3b304555cbb36a39ee4365d6/Data%20Profiling%20Report.html
 
@@ -60,6 +66,8 @@ L'ensemble de l'étude est visible https://github.com/patlemoal/POC-Rstudio/blob
 
 # Construction du modèle: 
 
+
+Nous allons donc étudier la relation entre la target (price) et la variable explicative SquareMeters (surface).
 
 
 
