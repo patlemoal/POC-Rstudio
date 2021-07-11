@@ -44,8 +44,24 @@ Langage et  outils utilisés:
 
 # Analyse des données :
 
+[test (1).Rmd](![image]analyse/test (1).Rmd)
+
+
+![image](analyse/donnesmanquantes.PNG)
+
+![image](analyse/correlation.PNG)
+
+![image](analyse/analyse.PNG)
+
+
+L'ensemble de l'étude est visible https://github.com/patlemoal/POC-Rstudio/blob/ad31b66be373945e3b304555cbb36a39ee4365d6/Data%20Profiling%20Report.html
+
+
 
 # Construction du modèle: 
+
+
+
 
 
 
