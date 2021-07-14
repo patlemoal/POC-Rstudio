@@ -123,9 +123,9 @@ Nous visualisons,  à travers 2 onglets, nos données sur shinny via le [code](a
 
 ##  Comparaison R vs python:
 
- Un aspect plus orienté ```statistique``` pour ``R`` et un aspect plus orienté ``programmation`` pour ``python`` (du moins en terme de sorties).
+ Un aspect plus orienté ```statistique``` pour ``R`` et plus orienté ``programmation`` pour ``python`` (du moins en terme de sorties).
  
- pour plus de details  ![python vs rstudio](/python vs rstudio.docx)
+ pour plus de details  ![python vs rstudio](python vs rstudio.docx)
  
  
 
