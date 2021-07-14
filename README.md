@@ -57,9 +57,9 @@ Ci dessous les 17 variables qui le compose :
 
 # Analyse des données :
 
-L'ensemble de l'analyse est accessible via le lien suivant : [test (1).Rmd](![image](analyse/test (1).Rmd))
+L'ensemble de l'analyse est accessible via le lien suivant : [test (1).Rmd](analyse/test (1).Rmd))
 
-A travers cette étude, nous constatons que nos données sont toutes numériques et qu'il n y a pas de données manquantes.
+A travers cette étude, nous constatons que nos données sont toutes numériques, sans données manquantes et qu'il existe des données correlées.
 
 <p align="center">
   <img src="/analyse/analyse.PNG" width="300" height="361">
@@ -79,7 +79,7 @@ Uniquement, deux variables sont corrélées (et fortement à 99%) :
 
 A noter : 
 
-L’extension DataExplorer fournit des outils d’exploration graphique d’un fichier de données. La fonction ``create_report`` génère un [rapport automatique](/analyse/Rrapportautomatique.pdf) à partir d’un tableau de données.
+L’extension DataExplorer fournit des outils d’exploration graphique d’un fichier de données. Pour cela, nous pouvons appeler La fonction ``create_report`` qui génère un [rapport automatique](/analyse/Rrapportautomatique.pdf).
 
 
 
@@ -108,15 +108,13 @@ lm(formula = price ~ squareMeters, data = data)
 
 # Visualisation du résultat:
 
-Nous visualisons nos données via shinny vie le [code](model.rda), à travers 2 onglets 
+Nous visualisons,  à travers 2 onglets, nos données sur shinny via le [code](model.rda), 
 
-- tableau : qui affiche les données brutes
-  - 
-
+- ``tableau`` : qui affiche les données brutes
 
 ![image](resultat/tableau.PNG)
 
-- prediction : qui affiche le prix prédictif en fonction de la surface .
+- ``prediction`` : qui affiche le prix prédictif en fonction de la surface .
 
 ![image](resultat/prediction.PNG)
 
