@@ -57,7 +57,7 @@ Ci dessous les 17 variables qui le compose :
 
 # Analyse des données :
 
-L'ensemble de l'analyse est accessible via le lien suivant : [test (1).Rmd](analyse/test (1).Rmd))
+L'ensemble de l'analyse est accessible [ici](model.rda).
 
 A travers cette étude, nous constatons que nos données sont toutes numériques, sans données manquantes et qu'il existe des données correlées.
 
@@ -108,7 +108,7 @@ lm(formula = price ~ squareMeters, data = data)
 
 # Visualisation du résultat:
 
-Nous visualisons,  à travers 2 onglets, nos données sur shinny via le [code](model.rda), 
+Nous visualisons,  à travers 2 onglets, nos données sur shinny via le [code](app_house2.R), 
 
 - ``tableau`` : qui affiche les données brutes
 
