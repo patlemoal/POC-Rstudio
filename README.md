@@ -49,7 +49,7 @@ Ci dessous les 17 variables qui le compose :
 
 
 <p align="center">
-  <img src="/analyse/variable.PNG" width="400" height="361">
+  <img src="/analyse/variable.PNG" width="800" height="361">
 </p>
 
 
