@@ -125,7 +125,7 @@ Nous visualisons,  à travers 2 onglets, nos données sur shinny via le [code](a
 
  Un aspect plus orienté ```statistique``` pour ``R`` et un aspect plus orienté ``programmation`` pour ``python`` (du moins en terme de sorties).
  
- plus de details ![ici](python vs rstudio.docx)
+ pour plus de details  ![python vs rstudio](python vs rstudio.docx)
  
  
 
