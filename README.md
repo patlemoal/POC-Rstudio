@@ -47,7 +47,7 @@ Langage et  outils utilisés:
 
 Ci dessous les 17 variables qui le compose :
 
-![image](analyse/variable.PNG, width="275", height="361")
+![image](analyse/variable.PNG width="275"height="361")
 
 
 
@@ -58,7 +58,7 @@ L'ensemble de l'analyse est accessible via le lien suivant : [test (1).Rmd](![im
 
 
 <p align="center">
-  <img src="/analyse/analyse.PNG" width="400" height="361">
+  <img src="/analyse/analyse.PNG" width="300" height="361">
   <img src="/analyse/donnesmanquantes.PNG" width="275" height="361">
   <img src="/analyse/grapcorel.PNG" width="275" height="361">
 </p>
@@ -86,6 +86,35 @@ L'ensemble de l'étude est visible https://github.com/patlemoal/POC-Rstudio/blob
 
 Nos 2 variables :  target (price) et  SquareMeters (surface) étant corrélées, le choix du modèle est simple et limpide : régression linaire
 
+```{r}
+
+modellm<-lm(price ~ squareMeters, data=data)
+modellm
+```
+
+lm(formula = price ~ squareMeters, data = data)
+
+Coefficients:
+ (Intercept)  squareMeters  
+        6461           100  
+        
+        
+lm(formula = price ~ squareMeters, data = data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-6155.9 -2406.8  -279.6  2158.0 12339.0 
+
+Coefficients:
+              Estimate Std. Error  t value Pr(>|t|)    
+(Intercept)  6.461e+03  6.529e+01    98.95   <2e-16 ***
+squareMeters 1.000e+02  1.134e-03 88177.45   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3263 on 9998 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 7.775e+09 on 1 and 9998 DF,  p-value: < 2.2e-16
 
 
 
