@@ -1,7 +1,7 @@
 # POC-Rstudio
 
 
-# Contexte du projet: 
+## Contexte du projet: 
 
 
 ```
@@ -13,7 +13,7 @@ Vous pouvez, par exemple, préparer un modèle pour estimer les prix de l'immobi
 
 
 
-# Déroulé de l'étude :
+## Déroulé de l'étude :
 
 Pour cette étude , nous allons
 -   visualiser les données
@@ -39,7 +39,7 @@ Langage et  outils utilisés:
 
 
 
-# Visualisation des données :
+##  Visualisation des données :
 
 [Notre jeu de données](https://github.com/patlemoal/POC-Rstudio/blob/85bb579e5cfce50edbea83fba3d632287ca51d1c/data/prices.csv) est constitué de  17 variables et 10 000 lignes. 
 
@@ -55,7 +55,7 @@ Ci dessous les 17 variables qui le compose :
 
 
 
-# Analyse des données :
+##  Analyse des données :
 
 L'ensemble de l'analyse est accessible [ici](model.rda).
 
@@ -83,7 +83,7 @@ L’extension DataExplorer fournit des outils d’exploration graphique d’un f
 
 
 
-# Construction du modèle: 
+##  Construction du modèle: 
 
 
 Nos 2 variables :  target (price) et  SquareMeters (surface) étant corrélées, le choix du modèle est simple et limpide : régression linaire
@@ -106,7 +106,7 @@ lm(formula = price ~ squareMeters, data = data)
 
 
 
-# Visualisation du résultat:
+## Visualisation du résultat:
 
 Nous visualisons,  à travers 2 onglets, nos données sur shinny via le [code](app_house2.R), 
 
@@ -121,11 +121,11 @@ Nous visualisons,  à travers 2 onglets, nos données sur shinny via le [code](a
 
 
 
-# Comparaison R vs python:
+##  Comparaison R vs python:
 
  Un aspect plus orienté ```statistique``` pour ``R`` et un aspect plus orienté ``programmation`` pour ``python`` (du moins en terme de sorties).
  
- pour plus de details  ![python vs rstudio](python vs rstudio.docx)
+ pour plus de details  ![python vs rstudio](/python vs rstudio.docx)
  
  
 
