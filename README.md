@@ -59,6 +59,7 @@ Ci dessous les 17 variables qui le compose :
 
 L'ensemble de l'analyse est accessible via le lien suivant : [test (1).Rmd](![image](analyse/test (1).Rmd))
 
+A travers cette étude, nous constatons que nos données sont toutes numériques et qu'il n y a pas de données manquantes.
 
 <p align="center">
   <img src="/analyse/analyse.PNG" width="300" height="361">
@@ -67,15 +68,14 @@ L'ensemble de l'analyse est accessible via le lien suivant : [test (1).Rmd](![im
 </p>
 
 
-Nos données sont toutes numériques et nous n'avons pas de données manquantes.
-
-
-![image](analyse/correlation.PNG)
-
-
 Uniquement, deux variables sont corrélées (et fortement à 99%) : 
   SquareMeters et Price. 
-Il s'agit d'un problème de régression linéaire.
+
+<p align="center">
+  <img src="/analyse/correlation.PNG" width="800" height="361">
+</p>
+
+
 
 A noter : 
 L’extension DataExplorer fournit des outils d’exploration graphique d’un fichier de données. En premier lieu, sa fonction create_report génère un rapport automatique à partir d’un tableau de données.
