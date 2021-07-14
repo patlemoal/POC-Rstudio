@@ -79,9 +79,7 @@ Uniquement, deux variables sont corrélées (et fortement à 99%) :
 
 A noter : 
 
-L’extension DataExplorer fournit des outils d’exploration graphique d’un fichier de données. La fonction ``create_report`` génère un [!rapport automatique](/analyse/Rrapportautomatique.pdf) à partir d’un tableau de données.
-
-Le rapport génér est visible 
+L’extension DataExplorer fournit des outils d’exploration graphique d’un fichier de données. La fonction ``create_report`` génère un [rapport automatique](/analyse/Rrapportautomatique.pdf) à partir d’un tableau de données.
 
 
 
@@ -105,35 +103,20 @@ Coefficients:
         
 lm(formula = price ~ squareMeters, data = data)
 
-Residuals:
-    Min      1Q  Median      3Q     Max 
--6155.9 -2406.8  -279.6  2158.0 12339.0 
-
-Coefficients:
-              Estimate Std. Error  t value Pr(>|t|)    
-(Intercept)  6.461e+03  6.529e+01    98.95   <2e-16 ***
-squareMeters 1.000e+02  1.134e-03 88177.45   <2e-16 ***
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
-Residual standard error: 3263 on 9998 degrees of freedom
-Multiple R-squared:      1,	Adjusted R-squared:      1 
-F-statistic: 7.775e+09 on 1 and 9998 DF,  p-value: < 2.2e-16
-
 
 
 
 # Visualisation du résultat:
 
-Nous visualisons nos données via shinny.
+Nous visualisons nos données via shinny vie le [code](model.rda), à travers 2 onglets 
 
-
-
+- tableau : qui affiche les données brutes
   - 
 
 
 ![image](resultat/tableau.PNG)
 
+- prediction : qui affiche le prix prédictif en fonction de la surface .
 
 ![image](resultat/prediction.PNG)
 
@@ -142,6 +125,10 @@ Nous visualisons nos données via shinny.
 
 # Comparaison R vs python:
 
+ Un aspect plus orienté ```statistique``` pour ``R`` et un aspect plus orienté ``programmation`` pour ``python`` (du moins en terme de sorties).	
+ plus de details [ici](python vs rstudio.docx)
+ 
+ 
 
 
 
